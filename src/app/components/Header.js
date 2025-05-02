@@ -104,8 +104,8 @@ function Header() {
                         } transition-transform duration-300 md:relative z-10 md:shadow-none md:flex md:items-center md:w-full`}
                 >
                     <ul className="flex flex-col md:flex-row items-start  md:items-center gap-6 md:gap-12 p-4 md:h-auto md:pt-4 pt-20 pe-0">
-                        <li className={`text-[16px] md:text-[16px] text-secondary relative group ${['/digital-transformation', '/artificial-intelligence', '/software-development'].includes(currentPath) ? "header_active" : ""}`}>
-                            <Link href="#" className=" ">
+                        <li className={`text-[16px] hover-text-gradient  md:text-[16px]  text-secondary relative group ${['/digital-transformation', '/artificial-intelligence', '/software-development'].includes(currentPath) ? "header_active" : ""}`}>
+                            <Link href="#" className="">
                                 Licensing
                             </Link>
                             {/* <ul className="absolute md:left-0 left-[100px]  top-0 z-50 md:top-full hidden border border-[#101010] bg-primary shadow-md rounded-md w-60 group-hover:flex flex-col">
@@ -127,13 +127,13 @@ function Header() {
                             </ul> */}
                         </li>
 
-                        <li className="text-[16px] text-secondary md:text-[16px] font-">
+                        <li className="text-[16px] hover-text-gradient   text-secondary md:text-[16px] font-">
                             <Link href="/industries" className={` ${currentPath === '/industries' && "header_active"}   `} onClick={() => setIsMenuOpen(false)}>
                                 Guide
                             </Link>
                         </li>
 
-                        <li className={`text-[16px] text-secondary md:text-[16px] relative group ${['/prudentaly', '/nexivo', '/testnut', '/docurator'].includes(currentPath) ? "header_active" : ""}`}>
+                        <li className={`text-[16px] hover-text-gradient  text-secondary md:text-[16px] relative group ${['/prudentaly', '/nexivo', '/testnut', '/docurator'].includes(currentPath) ? "header_active" : ""}`}>
                             <Link href="#" className={` ${currentPath === '/products' && "header_active"}   `}>
                                 Service
                             </Link>
@@ -161,22 +161,22 @@ function Header() {
                                 </li>
                             </ul> */}
                         </li>
-                        <li className="text-[16px] text-secondary md:text-[16px]">
+                        <li className="text-[16px] hover-text-gradient  text-secondary md:text-[16px]">
                             <Link onClick={() => setIsMenuOpen(false)} href="/process" className={` ${currentPath === '/process' && "header_active"}   `}>
                             Workspace
                             </Link>
                         </li>
-                        <li className="text-[16px] text-secondary md:text-[16px] font-">
+                        <li className="text-[16px] hover-text-gradient  text-secondary md:text-[16px] font-">
                             <Link href="/about" className={` ${currentPath === '/about' && "header_active"}   `} onClick={() => setIsMenuOpen(false)}>
                             Accounting
                             </Link>
                         </li>
-                        <li className="text-[16px] text-secondary md:text-[16px] font-">
+                        <li className="text-[16px] hover-text-gradient  text-secondary md:text-[16px] font-">
                             <Link href="/about" className={` ${currentPath === '/about' && "header_active"}   `} onClick={() => setIsMenuOpen(false)}>
                             Visa
                             </Link>
                         </li>
-                        <li className="text-[16px] text-secondary md:text-[16px] font-">
+                        <li className="text-[16px] hover-text-gradient  text-secondary md:text-[16px] font-">
                             <Link href="/about" className={` ${currentPath === '/about' && "header_active"}   `} onClick={() => setIsMenuOpen(false)}>
                             Company
                             </Link>
