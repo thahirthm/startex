@@ -4,10 +4,12 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+
 @theme {
   --color-primary: #070707;
   --color-secondary: #ffffff;
 }
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -16,9 +18,17 @@
 .gradient {
   background-image: linear-gradient(120deg, rgb(0 0 0) 3.9%, rgb(255 144 21 / 18%) 103.7%);
 }
+
 .hover-text-gradient {
 
   transition: all 0.3s ease;
+}
+
+.text-gradient {
+  background: var(--main, linear-gradient(90deg, #FF572F 0%, #FFAD20 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hover-text-gradient:hover {
@@ -27,12 +37,78 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 :root {
-  font-family: var(--font-inter), sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
 }
 
 body {
-  background: var(--background);
+  background: #070707;
   color: var(--foreground);
-  font-family: var(--font-inter), sans-serif;
+  font-family: var(--font-poppins);
+
+}
+
+.main-pt {
+  padding-top: 150px;
+}
+
+.gr-btn {
+  border-radius: 7px;
+  background: var(--main, linear-gradient(90deg, #FF572F 0%, #FFAD20 100%));
+  border: 0;
+  color: white;
+  font-size: 16px;
+  width: 200px;
+
+  padding: 15px 0px;
+}
+
+.br-gr-btn {
+  border-radius: 7px;
+  border: 1px solid var(--main, #FF572F);
+  font-size: 16px;
+  width: 200px;
+  padding: 15px 0px;
+  background: var(--main, linear-gradient(90deg, #FF572F 0%, #FFAD20 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner-tab{
+  border-radius: 23.917px;
+background: rgba(31, 27, 32, 0.87);
+backdrop-filter: blur(1.1666667461395264px);
+padding: 5px;
+}
+.bg-first{
+  border-radius: 25px;
+background: linear-gradient(300deg, rgba(255, 0, 63, 0.74) 48.01%, rgba(200, 15, 81, 0.39) 100%);
+backdrop-filter: blur(3px);
+
+}
+.bg-second{
+  border-radius: 25px;
+  background: linear-gradient(300deg, rgba(251, 176, 59, 0.74) 48.01%, rgba(251, 176, 59, 0.39) 100%);
+  backdrop-filter: blur(3px);
+}
+.bg-third{
+  border-radius: 25px;
+  background: linear-gradient(300deg, rgba(59, 59, 251, 0.74) 48.01%, rgba(59, 59, 251, 0.39) 100%);
+  backdrop-filter: blur(3px);
+}
+button{
+  cursor: pointer;
+}
+.banner-sc{
+  border-radius: 8.167px;
+border: 4.667px solid rgba(255, 255, 255, 0.15);
+background: rgba(255, 255, 255, 0.12);
+}
+
+
+.custom-gradient-bg {
+  background: linear-gradient(160deg, rgba(31, 27, 32, 0.65) 32.73%, rgba(86, 74, 90, 0.65) 178.87%);
+  backdrop-filter: blur(7.5px);
 }
