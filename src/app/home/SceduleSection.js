@@ -3,6 +3,7 @@ import Image from 'next/image';
 import consultant1 from "../../../public/assets/images/home/consultant1.png"
 import ScheduleCallCard from '../components/ScheduleCallCard';
 import ScheduleChat from '../components/ScheduleChat';
+import VerticalSlider from '../components/VerticalSlider';
 
 function SceduleSection() {
   return (
@@ -23,24 +24,7 @@ function SceduleSection() {
         {/* Right Side */}
         <div className="flex w-[70%] flex-col gap-8">
           {/* Consultants */}
-          <div className="flex gap-4 overflow-x-auto">
-            {[
-              { name: "License Consultant", src:  consultant1 },
-              { name: "Pro Consultant", src: consultant1},
-              { name: "License Consultant", src: consultant1 },
-            ].map((consultant, idx) => (
-              <div key={idx} className="bg-zinc-800 rounded-xl p-4 min-w-[150px] text-center">
-                <Image
-                  src={consultant.src}
-                  alt={consultant.name}
-                  width={100}
-                  height={100}
-                  className="mx-auto rounded-full"
-                />
-                <p className="mt-2 text-sm">{consultant.name}</p>
-              </div>
-            ))}
-          </div>
+      <VerticalSlider />
 
           {/* Chat Box */}
         <ScheduleChat />

@@ -112,3 +112,8 @@ background: rgba(255, 255, 255, 0.12);
   background: linear-gradient(160deg, rgba(31, 27, 32, 0.65) 32.73%, rgba(86, 74, 90, 0.65) 178.87%);
   backdrop-filter: blur(7.5px);
 }
+.skew-box{
+  transform: skewY(4deg);
+  border-radius: 27px;
+  margin-left: 6px;
+}
