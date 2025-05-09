@@ -7,7 +7,7 @@ import VerticalSlider from '../components/VerticalSlider';
 
 function SceduleSection() {
   return (
-    <div className='px-4 md:px-8 lg:px-[200px]  m-auto'>
+    <div className='px-4 md:px-8 lg:px-[250px]  m-auto'>
        <section className="  py-20  text-white">
       <div className="text-center mb-12">
         <h2 className="text-[50px] font-[500] text-gradient">Schedule Meeting</h2>

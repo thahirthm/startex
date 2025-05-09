@@ -46,7 +46,7 @@ export default function VerticalSlider() {
         }}
         mousewheel
         modules={[Pagination, Mousewheel]}
-        className="w-[700px] h-[250px]"
+        className="w-[600px] h-[250px]"
       >
         {/* Group slides into rows of 3 */}
         {Array.from({ length: Math.ceil(consultants.length / 3) }).map((_, i) => (
@@ -64,7 +64,7 @@ export default function VerticalSlider() {
                   />
                   <div className="absolute bottom-0 left-0 right-0 h-[60%] bg-gradient-to-t from-black/80 to-transparent z-10" />
                   <div className="relative z-20 text-white flex justify-between items-center">
-                    <p className="font-medium text-lg">{item.title}</p>
+                    <p className=" text-[14px] font-[300]">{item.title}</p>
                     <span className="text-2xl">{'>'}</span>
                   </div>
                 </div>

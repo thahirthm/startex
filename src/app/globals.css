@@ -65,15 +65,38 @@ body {
 }
 
 .br-gr-btn {
+  position: relative;
   border-radius: 7px;
-  border: 1px solid var(--main, #FF572F);
   font-size: 16px;
   width: 200px;
   padding: 15px 0px;
-  background: var(--main, linear-gradient(90deg, #FF572F 0%, #FFAD20 100%));
+  background: transparent;
+  z-index: 1;
+  text-align: center;
+  cursor: pointer;
+
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(90deg, #FF572F 0%, #FFAD20 100%);
+}
+
+.br-gr-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 7px;
+  padding: 1px; /* border thickness */
+  background: linear-gradient(90deg, #FF572F, #FFAD20);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
 }
 
 .banner-tab{
