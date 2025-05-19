@@ -194,3 +194,9 @@ button {
 .carft-bg{
   background-color: #020114;
 }
+
+.banking-flex .swiper-wrapper{
+  display: flex;
+      align-items: center;
+     
+}

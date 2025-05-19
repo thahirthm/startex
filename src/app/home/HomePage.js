@@ -8,6 +8,8 @@ import LicenseTab from './LicenseTab'
 import TypesofBusiness from './TypesofBusiness'
 import Craft from './Craft'
 import BankingPartners from './BankingPartners'
+import YoutubeSection from './YoutubeSection'
+import TypesofLicense from './TypesofLicense'
 
 function HomePage() {
   return (
@@ -19,6 +21,8 @@ function HomePage() {
       <Craft />
       {/* <HomePackages />  */}
       <LicenseTab />
+      <YoutubeSection />
+      <TypesofLicense />
       <TypesofBusiness />
       <BankingPartners />
     </div>
