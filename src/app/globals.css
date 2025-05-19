@@ -62,7 +62,6 @@ body {
   color: white;
   font-size: 16px;
   width: 200px;
-
   padding: 15px 0px;
 }
 
@@ -191,12 +190,37 @@ button {
     transform: translateY(-30px); /* Adjust the value for more/less movement */
   }
 }
-.carft-bg{
+.carft-bg {
   background-color: #020114;
 }
 
-.banking-flex .swiper-wrapper{
+.banking-flex .swiper-wrapper {
   display: flex;
-      align-items: center;
-     
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .gr-btn {
+    font-size: 14px;
+    width: 180px;
+    padding: 7px 0px;
+  }
+  .br-gr-btn {
+    font-size: 14px;
+    padding: 12px 0px;
+  }
+  .main-pt {
+    padding-top: 90px;
+}
+.active-activity-tab::after{
+  content:"";
+  position: absolute;
+  bottom: 0px;    
+  width: 100%;
+  height: 2px;  
+  background: linear-gradient(90deg, #ff572f, #ffad20);
+}
+.card-b{
+  bottom: 10px;
+}
 }

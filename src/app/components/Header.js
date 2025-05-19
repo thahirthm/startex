@@ -55,13 +55,13 @@ function Header() {
       }`}
     >
       <div className=" px-4 md:px-8 lg:px-[65px]   pt-7 pb-3 ">
-        <div className="flex gap-10 items-center rounded-[15px] border px-5 bg-[linear-gradient(0deg,_rgba(0,0,0,0.2)_0%,_rgba(0,0,0,0.2)_100%),linear-gradient(90deg,_rgba(64,64,64,0.48)_0%,_rgba(77,77,77,0.48)_100%)]">
+        <div className="flex gap-10 py-1 items-center rounded-[15px] border px-5 bg-[linear-gradient(0deg,_rgba(0,0,0,0.2)_0%,_rgba(0,0,0,0.2)_100%),linear-gradient(90deg,_rgba(64,64,64,0.48)_0%,_rgba(77,77,77,0.48)_100%)]">
           <div>
             <Link href="/">
               <Image
                 src={MainLogo}
                 alt="main icon"
-                className="w-[90px] md:w-[250px]"
+                className="w-[150px] md:w-[250px]"
                 width={500}
                 height={500}
               />
@@ -70,7 +70,7 @@ function Header() {
 
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="block md:hidden text-white focus:outline-none z-20"
+            className="block md:hidden text-white focus:outline-none z-20 ms-auto"
           >
             {isMenuOpen ? (
               <svg
@@ -110,7 +110,7 @@ function Header() {
 
           {/* Navigation Links */}
           <div
-            className={`fixed top-0 left-0 h-full w-full  shadow-lg transform ${
+            className={`fixed top-0 left-0  w-full md:bg-transparent bg-primary md:h-full  h-screen  shadow-lg transform ${
               isMenuOpen
                 ? "translate-x-0"
                 : "-translate-x-full md:translate-x-0"

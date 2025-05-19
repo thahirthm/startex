@@ -46,7 +46,7 @@ export default function VerticalSlider() {
         }}
         mousewheel
         modules={[Pagination, Mousewheel]}
-        className="w-[600px] h-[250px]"
+        className="md:w-[600px] md:h-[250px] h-[200px]"
       >
         {/* Group slides into rows of 3 */}
         {Array.from({ length: Math.ceil(consultants.length / 3) }).map((_, i) => (
@@ -55,7 +55,7 @@ export default function VerticalSlider() {
               {consultants.slice(i * 3, i * 3 + 3).map((item, idx) => (
                 <div
                   key={idx}
-                  className="rounded-[24px] bg-[#bde1f9] w-1/3 relative overflow-hidden h-[250px] flex flex-col justify-end px-4 pb-4 shadow-lg"
+                  className="rounded-[24px] bg-[#bde1f9] w-1/3 relative overflow-hidden md:h-[250px]  h-[200px] flex flex-col justify-end px-4 pb-4 shadow-lg"
                 >
                   <Image
                     src={item.image}

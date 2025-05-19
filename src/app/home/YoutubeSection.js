@@ -62,7 +62,7 @@ export default function YoutubeSection() {
             }}
           >
             {youtubeData.map((item, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide key={index} className=''>
                 <div className="relative  overflow-hidden shadow-md group">
                   <Image
                     src={item.thumbnail}
@@ -83,12 +83,12 @@ export default function YoutubeSection() {
             ))}
           </Swiper>
 
-          <button className="swiper-button-prev absolute top-1/2 -left-6 z-10 transform -translate-y-1/2 text-white bg-black/60 p-2 rounded-full">
+          {/* <button className="swiper-button-prev absolute top-1/2 -left-6 z-10 transform -translate-y-1/2 text-white bg-black/60 p-2 rounded-full">
             <FaChevronLeft />
           </button>
           <button className="swiper-button-next absolute top-1/2 -right-6 z-10 transform -translate-y-1/2 text-white bg-black/60 p-2 rounded-full">
             <FaChevronRight />
-          </button>
+          </button> */}
         </div>
       </div>
     </section>

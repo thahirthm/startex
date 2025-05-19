@@ -63,8 +63,8 @@ function TypesofBusiness() {
     return (
         <div className='md:px-8 lg:px-[90px] px-4  md:py-20 py-10'>
             <div className='relative pt-8 pb-8'>
-                <h3 className='text-[50px] font-[4000] text-white ps-5'>Types of Business Activities</h3>
-                <p className='md:w-[70%] text-[18px] font-[300] pt-5 ps-5 text-white'>Considering your business segment is crucial during the license registration process in Dubai. With Startex expert team boasting years of experience, we ensure precise selection from the comprehensive category list.</p>
+                <h3 className='md:text-[50px] text-[30px] font-[4000] text-white ps-5'>Types of Business Activities</h3>
+                <p className='md:w-[70%] md:text-[18px] text-[16px] font-[300] pt-5 ps-5 text-white'>Considering your business segment is crucial during the license registration process in Dubai. With Startex expert team boasting years of experience, we ensure precise selection from the comprehensive category list.</p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-6  pb-5 relative z-10">
                     {licenses.map((license, idx) => (
@@ -86,16 +86,16 @@ function TypesofBusiness() {
                     ))}
 
                 </div>
-                <div className='absolute top-0 ledt-0 w-full h-full '>
+                <div className='absolute top-0 left-0 w-full h-full '>
                     <Image
                         src={Card}
                         alt="License Card"
                         width={500}
                         height={500}
-                        className=" w-full h-full"
+                        className=" w-full h-full md:rounded-[0px] rounded-[40px] "
                     />
                 </div>
-                <div className='absolute bottom-0 right-[-80px] w-[170px] z-[-5] h-full'>
+                <div className='absolute bottom-0 md:right-[-80px] w-[170px] z-[-5] h-full'>
                     <Image
                         src={Asset1}
                         alt="License Card"

@@ -48,7 +48,7 @@ export default function BusinessTabs() {
   const [activeTab, setActiveTab] = useState(tabs[0]);
 
   return (
-    <div className="  pt-0 p-10 pe-0 rounded-2xl text-white w-full mx-auto">
+    <div className="  pt-0 md:p-10 pe-0 rounded-2xl text-white w-full mx-auto">
            <motion.div
                       initial={{ opacity: 0, y: 30 }} // starts slightly below with 0 opacity
                       animate={{ opacity: 1, y: 0 }} // animates to full opacity & original position
@@ -64,8 +64,7 @@ export default function BusinessTabs() {
               repeatType: "reverse", // enables smooth "up-down" oscillation
               ease: "easeInOut", // smooth curve
             }}
-            className="w-[90%] h-full"
-          >
+            className="md:w-[90%] h-full">
             <Image
               src={activeTab.image}
               alt={activeTab.name}
@@ -74,18 +73,17 @@ export default function BusinessTabs() {
               className="rounded-lg w-full h-full object-contain"
             />
           </motion.div>
-          <div
-            className={`absolute top-10 right-4 text-white p-4 rounded-xl shadow-lg w-56 transition-all duration-500 ${activeTab.bgColor}`}
+          <div className={`absolute md:top-10 card-b right-4 text-white p-4 rounded-xl shadow-lg md:w-56 transition-all duration-500 ${activeTab.bgColor}`}
           >
-            <p className="text-[15px] font-[300]">{activeTab.title}</p>
-            <h4 className="font-bold">{activeTab.highlight}</h4>
-            <button className="mt-3 banner-sc px-4 py-1 rounded-full text-[14px] font-[300]">
+            <p className="md:text-[15px] text-[12px] font-[300]">{activeTab.title}</p>
+            <h4 className="md:font-bold text-[14px]">{activeTab.highlight}</h4>
+            <button className="mt-3 banner-sc px-4 py-1 rounded-full md:text-[14px] text-[12px] font-[300]">
               {activeTab.cta}
             </button>
           </div>
         </div>
       </div>
-      <div className="flex gap-4 justify-center banner-tab mb-6">
+      <div className="md:flex gap-4 justify-center banner-tab mb-6">
         {tabs.map((tab) => (
           <button
             key={tab.name}

@@ -10,21 +10,21 @@ import Image from "next/image";
 function Banner() {
   return (
     <div className="bg-primary h-auto relative ">
-      <div className="flex pt-10 items-center main-pt px-4 md:px-8 lg:px-[90px] relative z-40">
+      <div className="md:flex pt-10 items-center main-pt px-4 md:px-8 lg:px-[90px] relative z-40">
         <div className="md:w-1/2">
           <motion.div
             initial={{ opacity: 0, y: 30 }} // starts slightly below with 0 opacity
             animate={{ opacity: 1, y: 0 }} // animates to full opacity & original position
             transition={{ duration: 1, ease: "easeOut" }} // smooth timing
           >
-            <h6 className="text-[18px] font-[300] text-gradient">
+            <h6 className="md:text-[18px] text-[16px] font-[300] text-gradient">
               Turn Passion into Profit
             </h6>
-            <h1 className="text-[50px] font-[500] pt-3 text-gradient">
+            <h1 className="md:text-[50px] text-[27px] font-[500] pt-3 text-gradient">
               Start Your <br />
               Entrepreneurial Journey
             </h1>
-            <p className="font-[300] text-[17px] text-secondary pt-3">
+            <p className="font-[300] md:text-[17px] text-[14px] text-secondary pt-3">
               Turn your vision into reality with expert guidance and seamless
               support.
             </p>

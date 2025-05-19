@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { FaPlay } from 'react-icons/fa';
+
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import Image from 'next/image';
 import YT from "../../../public/assets/images/home/l-logo1.png"
@@ -69,7 +69,7 @@ const youtubeData = [
 function BankingPartners() {
     return (
         <div className='px-4 lg:px-[90px] py-10 pb-10'>
-            <h3 className='text-gradient text-[50px] font-[500]'>Banking Partners</h3>
+            <h3 className='text-gradient md:text-[50px] text-[30px] font-[500]'>Banking Partners</h3>
 <div  className='banking-flex pt-10'>
 <div className="relative">
           <Swiper
@@ -81,8 +81,8 @@ function BankingPartners() {
               prevEl: '.swiper-button-prev',
             }}
             breakpoints={{
-              320: { slidesPerView: 4 },
-              768: { slidesPerView: 5 },
+              320: { slidesPerView: 3},
+              768: { slidesPerView: 3 },
               1024: { slidesPerView: 7.3 },
             }}
           >

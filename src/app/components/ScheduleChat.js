@@ -8,10 +8,10 @@ function ScheduleChat() {
     <div>
       <div className="bg-white text-black py-6 px-10 rounded-xl relative">
         <div>
-          <h4 className="text-[27px] font-[500]">Hurry? Get Support Right Away!</h4>
-          <p className="text-[14px] pt-3 ">Short on time? Call us or chat with us on WhatsApp instantly.</p>
+          <h4 className="md:text-[27px] text-[20px] font-[500]">Hurry? Get Support Right Away!</h4>
+          <p className="md:text-[14px] text-[12px] pt-3 ">Short on time? Call us or chat with us on WhatsApp instantly.</p>
         </div>
-        <div className="flex gap-3 pt-5">
+        <div className="flex items-center gap-3 pt-5">
           <button>
             <WhatsApp />
           </button>
@@ -19,7 +19,7 @@ function ScheduleChat() {
             <Call />
           </button>
           <div className='ms-auto'>
-            <button className="bg-[#221D23] text-white px-9 py-3 rounded-[6px] text-[17px]  font-[300]">
+            <button className="bg-[#221D23] text-white md:px-9 px-3 py-3 rounded-[6px] md:text-[17px] text-[14px]  font-[300]">
               Chat Now
             </button>
           </div>

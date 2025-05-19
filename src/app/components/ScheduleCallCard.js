@@ -15,9 +15,9 @@ export default function ScheduleCallCard() {
   const [selectedDate, setSelectedDate] = useState('18');
 
   return (
-    <div className=" text-white  flex flex-col w-[33%]  relative z-30">
+    <div className=" text-white  flex flex-col md:w-[33%]  relative z-30">
       <div className='custom-gradient-bg rounded-2xl border border-[#6E6E6E] px-6 py-8 shadow-lg relative z-30'>
-      <h2 className="text-[35px] font-[400] mb-3">Schedule a Call</h2>
+      <h2 className="md:text-[35px] text-[25px] font-[400] mb-3">Schedule a Call</h2>
       <p className="text-sm text-gray-300 mb-6 pt-3">
         Set up a convenient time to speak with our expert consultant and get the personalized assistance you need.
       </p>
