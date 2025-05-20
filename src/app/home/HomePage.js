@@ -10,6 +10,13 @@ import Craft from './Craft'
 import BankingPartners from './BankingPartners'
 import YoutubeSection from './YoutubeSection'
 import TypesofLicense from './TypesofLicense'
+import ConsultantBanner from '../components/ConsultantBanner'
+import VideoTesti from './VideoTesti'
+import Testimonials from './Testimonials'
+import Assoisiates from './Assoisiates'
+import Faq from './Faq'
+import Footer from '../components/Footer'
+import GoldenVisa from './GoldenVisa'
 
 function HomePage() {
   return (
@@ -19,12 +26,19 @@ function HomePage() {
       <Logo />
       <SceduleSection />
       <Craft />
-      {/* <HomePackages />  */}
+      <HomePackages /> 
       <LicenseTab />
       <YoutubeSection />
       <TypesofLicense />
       <TypesofBusiness />
       <BankingPartners />
+<ConsultantBanner />
+<GoldenVisa />
+<VideoTesti />
+<Testimonials />
+<Assoisiates />
+<Faq />
+<Footer />
     </div>
   )
 }

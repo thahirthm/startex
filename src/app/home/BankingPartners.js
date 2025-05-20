@@ -20,49 +20,49 @@ import YT6 from "../../../public/assets/images/home/l-logo6.png"
 
 const youtubeData = [
   {
-    title: 'Arabic',
+
     thumbnail: YT,
-    playlistUrl: '#',
+
   },
   {
-    title: 'Malayalam',
+
     thumbnail: YT2,
-    playlistUrl: '#',
+  
   },
   {
-    title: 'Tamil',
+
     thumbnail: YT3,
-    playlistUrl: '#',
+  
   },
   {
-    title: 'Tamil',
+
     thumbnail: YT4,
-    playlistUrl: '#',
+  
   },
   {
-    title: 'Tamil',
+
     thumbnail: YT5,
-    playlistUrl: '#',
+  
   },
   {
-    title: 'Tamil',
+
     thumbnail: YT6,
-    playlistUrl: '#',
+  
   },
   {
-    title: 'Tamil',
+
     thumbnail: YT4,
-    playlistUrl: '#',
+  
   },
   {
-    title: 'Tamil',
+
     thumbnail: YT5,
-    playlistUrl: '#',
+  
   },
   {
-    title: 'Tamil',
+
     thumbnail: YT6,
-    playlistUrl: '#',
+  
   },
 ];
 

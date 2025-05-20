@@ -18,7 +18,7 @@ function TypesofLicense() {
         {licenses.map((lic) => (
           <div
             key={lic.number}
-            className={`relative bg-[#181818]  rounded-xl p-6  h-64 flex flex-col justify-between shadow-lg transition-all md:w-[33%] mb-5 md:mb-0
+            className={`relative  rounded-xl p-6  h-64 flex flex-col justify-between shadow-lg transition-all md:w-[33%] mb-5 md:mb-0
               
             `}
             style={{ boxShadow: '0 0 30px 0 #000' }}

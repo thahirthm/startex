@@ -5,6 +5,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import BusinessTabs from "../components/BusinessTabs";
 import grad from "../../../public/assets/images/home/gr.png"
+
 import Image from "next/image";
 
 function Banner() {
