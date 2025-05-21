@@ -11,10 +11,10 @@ function Craft() {
         <div className=''>
             <div className='carft-bg px-4 md:px-8 lg:px-[90px] py-10 pb-0 md:pb-10'>
                 <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, ease: "easeOut" }}
-                    viewport={{ once: true, amount: 0.3 }} // controls when it triggers
+                      initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{ duration: 0.6, delay:  0.2, ease: "easeOut" }}
                 >
                     <div className='md:flex md:gap-10 gap-5'>
                         <div className='md:w-[35%] w-full'>

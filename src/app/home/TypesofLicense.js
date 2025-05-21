@@ -2,6 +2,8 @@ import Image from 'next/image'
 import React from 'react'
 import { FaIdBadge } from 'react-icons/fa'
 import cardL from "../../../public/assets/images/home/l-card.png"
+import assetSvg from "../../../public/assets/images/home/asset-2.png"
+
 
 const licenses = [
   { number: '01', title: 'Professional License', desc: 'Owning a professional license...' },
@@ -14,11 +16,11 @@ function TypesofLicense() {
   return (
     <div className='px-4 md:px-8 lg:px-[90px] pt-10 pb-10'>
       <h3 className='text-gradient md:text-[50px] text-[30px] mb-10'>Types of License</h3>
-      <div className="md:flex gap-8">
+      <div className="md:flex gap-8 relative">
         {licenses.map((lic) => (
           <div
             key={lic.number}
-            className={`relative  rounded-xl p-6  h-64 flex flex-col justify-between shadow-lg transition-all md:w-[33%] mb-5 md:mb-0
+            className={`relative  rounded-xl p-6  h-64 flex flex-col justify-between shadow-lg transition-all md:w-[33%] mb-5 md:mb-0 z-40
               
             `}
             style={{ boxShadow: '0 0 30px 0 #000' }}
@@ -39,10 +41,25 @@ width={500}
 height={500}
 className='absolute w-full h-full top-0 left-0'
 />
+
+
             </div>
           </div>
         ))}
+
+        {/* <div className='absolute bottom-[-110px] left-[-50px] z-10 w-[190px] h-[190px] '>
+          <Image
+            src={assetSvg}
+            alt="assetSvg"
+            width={500}
+            height={500}
+            className=" w-full h-full md:rounded-[0px] rounded-[40px] "
+          />
+
+        </div> */}
       </div>
+
+
     </div>
   )
 }

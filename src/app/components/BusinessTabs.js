@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import banner1 from "../../../public/assets/images/home/banner-1.png";
 import banner2 from "../../../public/assets/images/home/banner-2.png";
@@ -46,7 +46,18 @@ const tabs = [
 
 export default function BusinessTabs() {
   const [activeTab, setActiveTab] = useState(tabs[0]);
+  // Auto switch tab every 10 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveTab((prevTab) => {
+        const currentIndex = tabs.findIndex((tab) => tab.name === prevTab.name);
+        const nextIndex = (currentIndex + 1) % tabs.length;
+        return tabs[nextIndex];
+      });
+    }, 3000); // 10 seconds
 
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
   return (
     <div className="  pt-0 md:p-10 pe-0 rounded-2xl text-white w-full mx-auto">
            <motion.div

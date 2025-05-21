@@ -12,6 +12,8 @@ import Image from 'next/image';
 import YT from "../../../public/assets/images/home/yt.png"
 import YT2 from "../../../public/assets/images/home/yt2.png"
 import YT3 from "../../../public/assets/images/home/yt3.png"
+import grad from "../../../public/assets/images/home/yt-bg.png"
+
 
 
 const youtubeData = [
@@ -39,7 +41,7 @@ const youtubeData = [
 
 export default function YoutubeSection() {
   return (
-    <section className="bg-black text-white py-12 px-4 md:px-8 lg:px-[90px]">
+    <section className="bg-black text-white py-12 px-4 md:px-8 lg:px-[90px] relative">
       <div className=" mx-auto">
         <h2 className="text-xl font-semibold mb-6 flex items-center gap-2">
           {/* <Image src="/youtube-icon.svg" alt="YouTube" className="w-5 h-5" /> */}
@@ -91,6 +93,15 @@ export default function YoutubeSection() {
           </button> */}
         </div>
       </div>
+         <div className="absolute top-0 left-0 w-full h-full ">
+              <Image
+                src={grad}
+                alt="HomeLogo"
+                width={1000}
+                height={1000}
+                className=" w-full h-full "
+              />
+            </div>
     </section>
   );
 }

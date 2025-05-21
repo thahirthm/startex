@@ -40,13 +40,13 @@ function Banner() {
         </div>
       </div>
 
-      <div className="absolute top-0 left-0 w-full h-full">
+      <div className="absolute top-0 left-0 w-full h-full ">
         <Image
           src={grad}
           alt="HomeLogo"
           width={1000}
           height={1000}
-          className=" w-full h-full"
+          className=" w-full h-full "
         />
       </div>
     </div>

@@ -224,3 +224,16 @@ button {
   bottom: 10px;
 }
 }
+
+@keyframes slowRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.slow-rotate {
+  animation: slowRotate 20s linear infinite;
+}

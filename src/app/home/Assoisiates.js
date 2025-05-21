@@ -3,7 +3,7 @@
 
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
@@ -74,9 +74,13 @@ function Assoisiates() {
 <div  className='banking-flex pt-5'>
 <div className="relative">
           <Swiper
-            modules={[Navigation]}
+                       modules={[Navigation, Autoplay]}
             slidesPerView={7.3}
             spaceBetween={24}
+            autoplay={true}
+                delay={1000}
+                speed={2000}
+              loop={true}
             navigation={{
               nextEl: '.swiper-button-next',
               prevEl: '.swiper-button-prev',

@@ -56,8 +56,8 @@ function LicenseTab() {
 
 
             <div className='pt-5'>
-                <div className="w-full md:flex overflow-auto flex-col items-center">
-                    <div className="flex gap-10 md:justify-center overflow-auto md:overflow-hidden pb-5 mb-6 w-full pt-5">
+                <div className="w-full md:flex flex-col items-center">
+                    <div className="flex gap-10 md:justify-center  md:overflow-visible overflow-auto  pb-5 mb-6 w-full pt-5">
                         {tabs.map((tab) => (
                             <button
                                 key={tab.value}
