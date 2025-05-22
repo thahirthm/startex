@@ -28,7 +28,7 @@
 }
 
 .text-gradient {
-  background: var(--main, linear-gradient(90deg, #ff572f 0%, #ffad20 100%));
+  background: var(--main, linear-gradient(90deg, #ff572f 5%, #ffad20 100%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -55,8 +55,14 @@ body {
   padding-top: 150px;
 }
 
-.gr-btn {
+.bg-gradient {
   border-radius: 7px;
+  background: var(--main, linear-gradient(90deg, #ff572f 0%, #ffad20 100%));
+  border: 0;
+}
+
+.gr-btn {
+  border-radius: 15px;
   background: var(--main, linear-gradient(90deg, #ff572f 0%, #ffad20 100%));
   border: 0;
   color: white;
@@ -211,18 +217,18 @@ button {
   }
   .main-pt {
     padding-top: 90px;
-}
-.active-activity-tab::after{
-  content:"";
-  position: absolute;
-  bottom: 0px;    
-  width: 100%;
-  height: 2px;  
-  background: linear-gradient(90deg, #ff572f, #ffad20);
-}
-.card-b{
-  bottom: 10px;
-}
+  }
+  .active-activity-tab::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #ff572f, #ffad20);
+  }
+  .card-b {
+    bottom: 10px;
+  }
 }
 
 @keyframes slowRotate {
@@ -237,3 +243,18 @@ button {
 .slow-rotate {
   animation: slowRotate 20s linear infinite;
 }
+
+a.bg-gradient {
+  transition: transform 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 90px;
+}
+a.bg-gradient:hover svg {
+  transform: rotate(45deg);
+  transition: transform 0.4s ease;
+}
+             

@@ -128,7 +128,7 @@ function Header() {
                     : ""
                 }`}
               >
-                <Link href="#" className="">
+                <Link href="/Licensing" className="">
                   Licensing
                 </Link>
                 {/* <ul className="absolute md:left-0 left-[100px]  top-0 z-50 md:top-full hidden border border-[#101010] bg-primary shadow-md rounded-md w-60 group-hover:flex flex-col">

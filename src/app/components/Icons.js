@@ -250,12 +250,26 @@ function Call() {
 
 
 
+function ReDirect() {
+    return (
+        <>
+ <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+  <path d="M1.49974 13.2724L13.6042 1.96265M13.6042 1.96265L4.54114 1.36202M13.6042 1.96265L13.589 11.0456" stroke="white" stroke-width="1.65659" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+        </>
+    )
+}
+
+
+
+
 export {
 
     Gradient,
     YoutubeTop,
     FavTop,
     WhatsApp,
-    Call
+    Call,
+    ReDirect
     
 }

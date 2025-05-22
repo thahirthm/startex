@@ -15,11 +15,11 @@ function GoldenVisa() {
                     muted={true}
                     controls={false}
                     width="100%"
-                    height="100%"
+                    height="80%"
                     playsinline={true}
                 />
             </div>
-            <h4 className='pt-10 text-secondary text-center font-[300] text-[22px]'>The golden privilege to premium residents</h4>
+            <h4 className=' text-secondary text-center font-[300] text-[22px]'>The golden privilege to premium residents</h4>
             <div className='text-center '>
               <button className="gr-btn mt-8 ">Apply Now</button>
             </div>

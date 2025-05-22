@@ -12,9 +12,9 @@ export default function ConsultantBanner() {
     <section className="bg-[#FCD1B1] rounded-3xl  pt-5 pb-5 md:pt-0 md:pb-0 px-5 flex flex-col md:flex-row items-center justify-between gap-8 relative">
       {/* Left Side */}
       <div className="flex-1">
-        <h2 className="text-3xl md:text-4xl font-semibold text-[#C13A17] leading-tight">
+        <h2 className="text-3xl md:text-[50px] font-[400] text-[#C13A17] leading-tight">
           Connect with our <br />
-          <span className="font-bold">expert consultants</span>
+          <span className="font-[400]">expert consultants</span>
         </h2>
       </div>
 

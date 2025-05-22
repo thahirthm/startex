@@ -4,6 +4,8 @@ import React from 'react'
 import Fav from "../../../public/assets/images/home/fav.svg"
 import PackageSlider from '../components/PackageSlider'
 import grad from "../../../public/assets/images/home/gr.png"
+import packgeVector from "../../../public/assets/images/home/package-vector.png"
+
 import { motion } from "framer-motion";
 function HomePackages() {
     return (
@@ -46,6 +48,19 @@ function HomePackages() {
         />
       </div> 
       </motion.div> 
+
+
+ <div className="absolute top-0 right-10 md:w-[50%] md:h-[50%]">
+        <Image
+          src={packgeVector}
+          alt="HomeLogo"
+          width={1000}
+          height={1000}
+          className=" w-full h-full"
+        />
+      </div> 
+
+
         </div>
        
     )

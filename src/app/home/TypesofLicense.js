@@ -26,7 +26,7 @@ function TypesofLicense() {
             style={{ boxShadow: '0 0 30px 0 #000' }}
           >
             <div className="flex justify-between items-center relative z-50">
-              <span className="text-gradient text-3xl font-[400]">{lic.number}</span>
+              <span className="text-gradient text-[35px] font-[400]">{lic.number}</span>
               <FaIdBadge className="text-white text-2xl" />
             </div>
             <div>
@@ -53,7 +53,7 @@ className='absolute w-full h-full top-0 left-0'
             alt="assetSvg"
             width={500}
             height={500}
-            className=" w-full h-full md:rounded-[0px] rounded-[40px] "
+            className=" w-full h-full md:rounded-[0px] r14ounded-[40px] "
           />
 
         </div> */}

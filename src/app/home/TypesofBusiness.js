@@ -5,7 +5,7 @@ import Logo1 from "../../../public/assets/images/home/l-1.svg";
 import Card from "../../../public/assets/images/home/license-card.png";
 import Asset1 from "../../../public/assets/images/home/card-asset.svg";
 import Asset2 from "../../../public/assets/images/home/card-asset2.svg";
-
+import consultantFav from '../../../public/assets/images/home/fav-i.png'; 
 
 
 export const licenses = [
@@ -112,6 +112,17 @@ function TypesofBusiness() {
                         width={500}
                         height={500}
                         className=" w-full h-full asset1"
+                    />
+                </div>
+
+
+                <div className='absolute top-0 right-[80px] w-[220px] z-[-5] h-[170px] opacity-45'>
+                    <Image
+                        src={consultantFav}
+                               alt="Consultantfav"
+                        width={500}
+                        height={500}
+                        className=" w-full h-full "
                     />
                 </div>
 
