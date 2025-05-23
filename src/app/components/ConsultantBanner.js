@@ -30,6 +30,7 @@ export default function ConsultantBanner() {
         <div className="absolute inset-0 m-auto w-0 h-0 border-l-[80px] border-r-[80px] border-b-[140px] border-transparent border-b-[#f9be95] opacity-50 -z-10 rotate-[30deg]" />
       </div>
 
+
       {/* Right Side */}
       <div className="flex-1 ">
         <p className="text-[#C13A17] mb-4 text-sm md:text-left ">
@@ -51,8 +52,6 @@ export default function ConsultantBanner() {
           objectFit="contain"
           className="  w-[250px] md:h-full me-10"/>
       </div>
-
-
 
     </section>
 

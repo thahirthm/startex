@@ -128,7 +128,7 @@ function Header() {
                     : ""
                 }`}
               >
-                <Link href="/Licensing" className="">
+                <Link href="/licensing" className="">
                   Licensing
                 </Link>
                 {/* <ul className="absolute md:left-0 left-[100px]  top-0 z-50 md:top-full hidden border border-[#101010] bg-primary shadow-md rounded-md w-60 group-hover:flex flex-col">
@@ -152,7 +152,7 @@ function Header() {
 
               <li className="text-[16px] hover-text-gradient   text-secondary md:text-[16px] font-">
                 <Link
-                  href="/industries"
+                  href="/guide"
                   className={` ${
                     currentPath === "/industries" && "header_active"
                   }   `}

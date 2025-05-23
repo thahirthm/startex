@@ -1,15 +1,12 @@
 "use client";
-
 import React from "react";
-
 import { motion } from "framer-motion";
 import BusinessTabs from "../components/BusinessTabs";
 import grad from "../../../public/assets/images/home/gr.png"
 import LicensingBannerImg from "../../../public/assets/images/licensing/dubai-banner.png";
-
 import Image from "next/image";
 
-function LicensingBanner() {
+function GuideBanner() {
     return (
         <div className="bg-primary h-auto relative pb-10">
             <div className="md:flex pt-10 items-center main-pt px-4 md:px-8 lg:px-[90px] relative z-40 gap-20">
@@ -56,7 +53,7 @@ function LicensingBanner() {
                 />
             </div>
         </div>
-    );
+    )
 }
 
-export default LicensingBanner;
+export default GuideBanner
