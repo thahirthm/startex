@@ -4,7 +4,7 @@ import LogoMain from "../../../public/assets/images/home/logo.png"
 
 function Logo() {
   return (
-    <div className='px-4 md:px-8 lg:px-[90px]'>
+    <div className='px-4 md:px-8 lg:px-[90px] pb-10'>
       <Image
         src={LogoMain}
         alt="HomeLogo"

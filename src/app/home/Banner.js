@@ -7,10 +7,11 @@ import BusinessTabs from "../components/BusinessTabs";
 import grad from "../../../public/assets/images/home/gr.png"
 
 import Image from "next/image";
+import Logo from "./Logo";
 
 function Banner() {
   return (
-    <div className="bg-primary h-auto relative ">
+    <div className="bg-primary h-auto relative overflow-hidden ">
       <div className="md:flex pt-10 items-center main-pt px-4 md:px-8 lg:px-[90px] relative z-40">
         <div className="md:w-1/2">
           <motion.div
@@ -40,7 +41,7 @@ function Banner() {
         </div>
       </div>
 
-      <div className="absolute top-0 left-0 w-full h-full ">
+      {/* <div className="absolute top-0 left-0 w-full h-full ">
         <Image
           src={grad}
           alt="HomeLogo"
@@ -48,7 +49,15 @@ function Banner() {
           height={1000}
           className=" w-full h-full "
         />
+      </div> */}
+
+      <div className="absolute top-0 left-0 w-full h-full banner-gradient">
+
       </div>
+
+
+        <Logo />
+      
     </div>
   );
 }

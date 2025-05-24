@@ -119,6 +119,34 @@ body {
   );
   backdrop-filter: blur(3px);
 }
+
+
+
+.banner-gradient {
+  position: absolute;
+  inset: 0;
+
+}
+
+.banner-gradient::before {
+  content: '';
+  position: absolute;
+  inset: -50%; /* make it bigger to cover rotation */
+    background: linear-gradient(54deg, rgba(0, 0, 0, 0.4) 35.9%, rgb(255 144 21 / 20%) 87.7%);
+  filter: blur(287px);
+  animation: rotateBg 20s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes rotateBg {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .bg-second {
   border-radius: 25px;
   background: linear-gradient(
@@ -184,7 +212,7 @@ button {
   );
 }
 .asset1 {
-  filter: blur(2px);
+  /* filter: blur(2px); */
   animation: floatY 2s ease-in-out infinite alternate;
 }
 
@@ -229,6 +257,28 @@ button {
   .card-b {
     bottom: 10px;
   }
+  .call-button{
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .whatsapp-button{
+       width: 40px !important;
+    height: 40px !important;
+  }
+  .chatbot-button{
+      width: 40px !important;
+    height: 40px !important;
+  }
+  .call-button svg{
+    width: 25px !important;
+  }
+    .whatsapp-button svg{
+    width: 25px !important;
+  }
+   .chatbot-button svg{
+    width: 25px !important;
+  }
+
 }
 
 @keyframes slowRotate {

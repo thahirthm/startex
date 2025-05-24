@@ -34,7 +34,7 @@ function HomePage() {
     <div>
       <Header />
       <Banner />
-      <Logo />
+      {/* <Logo /> */}
       <SceduleSection />
       <Craft />
       <HomePackages />
