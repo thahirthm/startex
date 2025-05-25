@@ -35,7 +35,7 @@ function HomePage() {
       <Header />
       <Banner />
       {/* <Logo /> */}
-      <SceduleSection />
+ 
       <Craft />
       <HomePackages />
       <LicenseTab />

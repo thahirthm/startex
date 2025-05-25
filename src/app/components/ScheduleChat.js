@@ -6,7 +6,7 @@ import Image from 'next/image'
 function ScheduleChat() {
   return (
     <div>
-      <div className="bg-white text-black py-6 px-10 rounded-xl relative">
+      <div className="bg-white text-black py-6 px-10 rounded-xl relative z-50">
         <div>
           <h4 className="md:text-[27px] text-[20px] font-[500]">Hurry? Get Support Right Away!</h4>
           <p className="md:text-[14px] text-[12px] pt-3 ">Short on time? Call us or chat with us on WhatsApp instantly.</p>

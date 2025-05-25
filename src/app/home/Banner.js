@@ -8,6 +8,7 @@ import grad from "../../../public/assets/images/home/gr.png"
 
 import Image from "next/image";
 import Logo from "./Logo";
+import SceduleSection from "./SceduleSection";
 
 function Banner() {
   return (
@@ -51,13 +52,14 @@ function Banner() {
         />
       </div> */}
 
+
+
+
+      <Logo />
+      <SceduleSection />
       <div className="absolute top-0 left-0 w-full h-full banner-gradient">
 
       </div>
-
-
-        <Logo />
-      
     </div>
   );
 }

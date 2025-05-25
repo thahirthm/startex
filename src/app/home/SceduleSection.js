@@ -19,16 +19,16 @@ function SceduleSection() {
         viewport={{ once: true, amount: 0.3 }} // controls when it triggers
       >
         <section className="  md:py-20 py-10  text-white">
-          <div className='flex justify-center'>
-            <div className='md:w-[130px] md:h-[100px] w-[70px] h-[500px] pt-5'>
+          <div className='md:flex  justify-center'>
+            <div className='md:w-[130px] md:h-[100px] md:block hidden w-[70px] h-[50px] pt-5 relative z-50'>
               <Image
                 src={ArowVector}
                 width={1000}
                 height={1000}
-                className='md:w-full md:h-full w-[40px] h-[40px]'
+                className='md:w-full md:h-full w-[40px] h-[40px] asset1'
               />
             </div>
-            <div className="text-center mb-12">
+            <div className="text-center mb-12 relative z-50">
               <h2 className="md:text-[50px] text-[30px] font-[500] text-gradient">Schedule Meeting</h2>
               <div className='md:flex justify-center items-center'>
                 <p className="mt-2 md:text-[16px] text-[14px] text-gray-300 ">Start Your Entrepreneurial Journey</p>
@@ -36,8 +36,6 @@ function SceduleSection() {
               </div>
             </div>
           </div>
-
-
 
           <div className="md:flex gap-12 w-full items-start">
             {/* Left Card */}
