@@ -62,7 +62,7 @@ body {
 }
 
 .gr-btn {
-  border-radius:9px;
+  border-radius: 9px;
   background: var(--main, linear-gradient(90deg, #ff572f 0%, #ffad20 100%));
   border: 0;
   color: white;
@@ -120,19 +120,20 @@ body {
   backdrop-filter: blur(3px);
 }
 
-
-
 .banner-gradient {
   position: absolute;
   inset: 0;
-
 }
 
 .banner-gradient::before {
   content: '';
   position: absolute;
   inset: -50%; /* make it bigger to cover rotation */
-    background: linear-gradient(54deg, rgba(0, 0, 0, 0.4) 35.9%, rgb(255 144 21 / 20%) 87.7%);
+  background: linear-gradient(
+    54deg,
+    rgba(0, 0, 0, 0.4) 35.9%,
+    rgb(255 144 21 / 20%) 87.7%
+  );
   filter: blur(287px);
   animation: rotateBg 20s linear infinite;
   transform-origin: center;
@@ -257,28 +258,27 @@ button {
   .card-b {
     bottom: 10px;
   }
-  .call-button{
+  .call-button {
     width: 40px !important;
     height: 40px !important;
   }
-  .whatsapp-button{
-       width: 40px !important;
+  .whatsapp-button {
+    width: 40px !important;
     height: 40px !important;
   }
-  .chatbot-button{
-      width: 40px !important;
+  .chatbot-button {
+    width: 40px !important;
     height: 40px !important;
   }
-  .call-button svg{
+  .call-button svg {
     width: 25px !important;
   }
-    .whatsapp-button svg{
+  .whatsapp-button svg {
     width: 25px !important;
   }
-   .chatbot-button svg{
+  .chatbot-button svg {
     width: 25px !important;
   }
-
 }
 
 @keyframes slowRotate {
@@ -307,4 +307,12 @@ a.bg-gradient:hover svg {
   transform: rotate(45deg);
   transition: transform 0.4s ease;
 }
-             
+
+.service-box {
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.43);
+  backdrop-filter: blur(11.528412818908691px);
+  width: 100%;
+  height: fit-content;
+  padding: 15px;
+}

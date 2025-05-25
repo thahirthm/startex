@@ -49,8 +49,6 @@ function SceduleSection() {
               {/* Chat Box */}
               <ScheduleChat />
 
-
-
             </div>
           </div>
         </section>
