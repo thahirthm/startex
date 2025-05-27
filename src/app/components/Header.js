@@ -206,7 +206,7 @@ function Header() {
               <li className="text-[16px] hover-text-gradient  text-secondary md:text-[16px]">
                 <Link
                   onClick={() => setIsMenuOpen(false)}
-                  href="/process"
+                  href="/workspace"
                   className={` ${
                     currentPath === "/process" && "header_active"
                   }   `}

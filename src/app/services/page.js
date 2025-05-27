@@ -25,10 +25,7 @@ function page() {
       <VideoTesti />
       <Testimonials />
       <Assoisiates />
-      <Faq />
-
-
-
+      <Faq />    
       <Footer />
     </div>
   )

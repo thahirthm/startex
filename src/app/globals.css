@@ -316,3 +316,12 @@ a.bg-gradient:hover svg {
   height: fit-content;
   padding: 15px;
 }
+
+.bg-office {
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(14.649999618530273px);
+
+  height: fit-content;
+  padding: 15px;
+}
