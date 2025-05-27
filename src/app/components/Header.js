@@ -198,7 +198,7 @@ function Header() {
                 <Link
                   onClick={() => setIsMenuOpen(false)}
                   href="/workspace"
-                  className={` ${currentPath === "/process" && "header_active"
+                  className={` ${currentPath === "/workspace" && "header_active"
                     }   `}
                 >
                   Workspace
@@ -206,8 +206,8 @@ function Header() {
               </li>
               <li className="text-[16px] hover-text-gradient  text-secondary md:text-[16px] font-">
                 <Link
-                  href="/about"
-                  className={` ${currentPath === "/about" && "header_active"
+                  href="/accounting"
+                  className={` ${currentPath === "/accounting" && "header_active"
                     }   `}
                   onClick={() => setIsMenuOpen(false)}
                 >

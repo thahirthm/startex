@@ -1,24 +1,31 @@
 "use client";
-import React from 'react'
+import React, { useRef, useEffect } from 'react';
 import Image from 'next/image';
-import consultant1 from "../../../public/assets/images/home/consultant1.png"
-import ArowVector from "../../../public/assets/images/home/arrow.png"
-
-
+import ArowVector from "../../../public/assets/images/home/arrow.png";
 import ScheduleCallCard from '../components/ScheduleCallCard';
 import ScheduleChat from '../components/ScheduleChat';
 import VerticalSlider from '../components/VerticalSlider';
-import { motion } from "framer-motion";
+import { motion, useInView, useAnimation } from "framer-motion";
+
 function SceduleSection() {
+  const headingRef = useRef(null);
+  const callCardRef = useRef(null);
+  const sliderRef = useRef(null);
+  const chatRef = useRef(null);
+
+  const headingInView = useInView(headingRef, { amount: 0.3, once: false });
+  const callCardInView = useInView(callCardRef, { amount: 0.3, once: false });
+  const sliderInView = useInView(sliderRef, { amount: 0.3, once: false });
+  const chatInView = useInView(chatRef, { amount: 0.3, once: false });
+
+  const fadeUp = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  };
+
   return (
-    <div className='px-4 md:px-8 lg:px-[250px]  m-auto'>
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: "easeOut" }}
-        viewport={{ once: true, amount: 0.3 }} // controls when it triggers
-      >
-        <section className="  md:py-20 py-0  text-white">
+    <div className='px-4 md:px-8 lg:px-[250px] mx-auto text-white'>
+      <section className="py-0 md:py-20">
           <div className='md:flex  justify-center'>
             <div className='md:w-[130px] md:h-[100px] md:block hidden w-[70px] h-[50px] pt-5 relative z-50'>
               <Image
@@ -38,24 +45,33 @@ function SceduleSection() {
             </div>
           </div>
 
-          <div className="md:flex gap-12 w-full items-start">
-            {/* Left Card */}
+        <div className="flex flex-col md:flex-row gap-12 w-full items-start mt-10">
+        
             <ScheduleCallCard />
+       
 
-            {/* Right Side */}
-            <div className="flex md:w-[70%] pt-10 md:pt-0 flex-col gap-8">
-              {/* Consultants */}
+          <div className="flex flex-col gap-8 w-full md:w-[70%]">
+            <motion.div
+              ref={sliderRef}
+              variants={fadeUp}
+              initial="hidden"
+              animate={sliderInView ? "visible" : "hidden"}
+            >
               <VerticalSlider />
-
-              {/* Chat Box */}
+            </motion.div>
+            <motion.div
+              ref={chatRef}
+              variants={fadeUp}
+              initial="hidden"
+              animate={chatInView ? "visible" : "hidden"}
+            >
               <ScheduleChat />
-
-            </div>
+            </motion.div>
           </div>
-        </section>
-      </motion.div>
+        </div>
+      </section>
     </div>
-  )
+  );
 }
 
-export default SceduleSection
+export default SceduleSection;
