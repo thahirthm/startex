@@ -114,40 +114,22 @@ function Header() {
               } transition-transform duration-300 md:relative z-10 md:shadow-none md:flex md:items-center md:w-full`}
           >
             <ul className="flex flex-col md:flex-row items-start  md:items-center gap-6 md:gap-12 p-4 md:h-auto md:pt-4 pt-20 pe-0">
-              <li
-                className={`text-[16px] hover-text-gradient  md:text-[16px]  text-secondary relative group ${[
-                
-                ].includes(currentPath)
-                  ? "header_active"
-                  : ""
-                  }`}
-              >
-                <Link href="/Licensing" className="">
+
+              <li className="text-[16px] hover-text-gradient   text-secondary md:text-[16px] font-">
+                <Link
+                  href="/licensing"
+                  className={` ${currentPath === "/licensing" && "text-gradient"
+                    }   `}
+                  onClick={() => setIsMenuOpen(false)}
+                >
                   Licensing
                 </Link>
-                {/* <ul className="absolute md:left-0 left-[100px]  top-0 z-50 md:top-full hidden border border-[#101010] bg-primary shadow-md rounded-md w-60 group-hover:flex flex-col">
-                                <li className='p-3 border-b border-[#101010]'>
-                                    <Link onClick={() => setIsMenuOpen(false)} href="/digital-transformation" className=" text-secondary text-[18px] font-[300] opacity-50 hover:opacity-100">
-                                        Digital Transformation
-                                    </Link>
-                                </li>
-                                <li className='p-3 border-b border-[#101010]'>
-                                    <Link onClick={() => setIsMenuOpen(false)} href="/artificial-intelligence" className=" text-secondary text-[18px] font-[300] opacity-50 hover:opacity-100">
-                                        Artificial intelligence
-                                    </Link>
-                                </li>
-                                <li className='p-3 border-b border-[#101010]'>
-                                    <Link onClick={() => setIsMenuOpen(false)} href="/software-development" className=" text-secondary text-[18px] font-[300] opacity-50 hover:opacity-100">
-                                        Software Development
-                                    </Link>
-                                </li>
-                            </ul> */}
               </li>
 
               <li className="text-[16px] hover-text-gradient   text-secondary md:text-[16px] font-">
                 <Link
                   href="/guide"
-                  className={` ${currentPath === "/industries" && "header_active"
+                  className={` ${currentPath === "/guide" && "text-gradient"
                     }   `}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -155,65 +137,42 @@ function Header() {
                 </Link>
               </li>
 
-              <li
-                className={`text-[16px] hover-text-gradient  text-secondary md:text-[16px] relative group ${["/prudentaly", "/nexivo", "/testnut", "/docurator"].includes(
-                  currentPath
-                )
-                  ? "header_active"
-                  : ""
-                  }`}
-              >
+
+              <li className="text-[16px] hover-text-gradient   text-secondary md:text-[16px] font-">
                 <Link
                   href="/services"
-                  className={` ${currentPath === "/products" && "header_active"
+                  className={` ${currentPath === "/services" && "text-gradient"
                     }   `}
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   Service
                 </Link>
-                {/* <ul className="absolute md:left-0 left-[100px]  top-0 z-50 md:top-full hidden border border-[#101010] bg-primary shadow-md rounded-md w-40 group-hover:flex flex-col">
-
-                                <li className='p-3 border-b border-[#101010]'>
-                                    <Link onClick={() => setIsMenuOpen(false)} href="/prudentaly" className=" text-secondary text-[18px] font-[300] opacity-50 hover:opacity-100">
-                                        Prudentaly
-                                    </Link>
-                                </li>
-                                <li className='p-3 border-b border-[#101010]'>
-                                    <Link onClick={() => setIsMenuOpen(false)} href="/nexivo" className=" text-secondary text-[18px] font-[300] opacity-50 hover:opacity-100">
-                                        Nexivo
-                                    </Link>
-                                </li>
-                                <li className='p-3 border-b border-[#101010]'>
-                                    <Link onClick={() => setIsMenuOpen(false)} href="/testnut" className=" text-secondary text-[18px] font-[300] opacity-50 hover:opacity-100">
-                                        Testnut
-                                    </Link>
-                                </li>
-                                <li className='p-3 border-b border-[#101010]'>
-                                    <Link onClick={() => setIsMenuOpen(false)} href="/docurator" className=" text-secondary text-[18px] font-[300] opacity-50 hover:opacity-100">
-                                        Docurator
-                                    </Link>
-                                </li>
-                            </ul> */}
               </li>
-              <li className="text-[16px] hover-text-gradient  text-secondary md:text-[16px]">
+
+              <li className="text-[16px] hover-text-gradient   text-secondary md:text-[16px] font-">
                 <Link
-                  onClick={() => setIsMenuOpen(false)}
                   href="/workspace"
-                  className={` ${currentPath === "/workspace" && "header_active"
+                  className={` ${currentPath === "/workspace" && "text-gradient"
                     }   `}
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   Workspace
                 </Link>
               </li>
-              <li className="text-[16px] hover-text-gradient  text-secondary md:text-[16px] font-">
+
+
+              <li className="text-[16px] hover-text-gradient   text-secondary md:text-[16px] font-">
                 <Link
                   href="/accounting"
-                  className={` ${currentPath === "/accounting" && "header_active"
+                  className={` ${currentPath === "/accounting" && "text-gradient"
                     }   `}
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Accounting
+                      Accounting
                 </Link>
               </li>
+
+         
               <li className="text-[16px] hover-text-gradient  text-secondary md:text-[16px] font-">
                 <Link
                   href="/about"
@@ -236,7 +195,7 @@ function Header() {
               </li>
             </ul>
 
-            <ul className="flex ms-auto flex-col md:flex-row items-start  md:items-center gap-6 md:gap-4 p-4 md:h-auto  md:pt-4 pt-20 pe-0">
+            <ul className="flex ms-auto  md:flex-row items-start  md:items-center gap-6 md:gap-4 p-4 md:h-auto  md:pt-4 pt-20 pe-0">
               <li className="text-[16px] text-secondary hover:bg-white hover:text-primary md:text-[16px] border border-[#BFB6C3] rounded-[5px] px-3 py-2">
                 <Link href="/" className="flex items-center gap-2">
                   <YoutubeTop /> Watch
