@@ -53,7 +53,7 @@ function Header() {
         }`}
     >
       <div className=" px-4 md:px-8 lg:px-[65px]   pt-7 pb-3 ">
-        <div className="flex gap-10 py-1 items-center md:rounded-[15px] rounded-[10px] border px-5 bg-[linear-gradient(0deg,_rgba(0,0,0,0.2)_0%,_rgba(0,0,0,0.2)_100%),linear-gradient(90deg,_rgba(64,64,64,0.48)_0%,_rgba(77,77,77,0.48)_100%)]">
+        <div className="flex gap-10 md:py-1 py-2 items-center md:rounded-[15px]  rounded-[10px] border px-5 bg-[linear-gradient(0deg,_rgba(0,0,0,0.2)_0%,_rgba(0,0,0,0.2)_100%),linear-gradient(90deg,_rgba(64,64,64,0.48)_0%,_rgba(77,77,77,0.48)_100%)]">
           <div>
             <Link href="/">
               <Image
