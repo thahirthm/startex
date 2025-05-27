@@ -39,6 +39,7 @@ function TypesofLicense() {
 src={cardL}
 width={500}
 height={500}
+alt='cardL'
 className='absolute w-full h-full top-0 left-0'
 />
 

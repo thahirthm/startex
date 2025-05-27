@@ -13,7 +13,7 @@ function BusinessLicenses() {
     return (
         <div className='px-4 md:px-8 lg:px-[90px] pt-10 pb-10'>
             <h3 className='text-gradient md:text-[50px] text-[27px] text-center'>Our Business Licenses</h3>
-            <p className='md:text-[16px] text-[15px] font-[300] pt-5 md:w-[70%] m-auto text-secondary text-center pb-10 md:pb-0'>Discover the range of business licenses we offer, designed to support your venture's unique needs and help you succeed in Dubai’s dynamic market.</p>
+            <p className='md:text-[16px] text-[15px] font-[300] pt-5 md:w-[70%] m-auto text-secondary text-center pb-10 md:pb-0'>Discover the range of business licenses we offer, designed to support your venture's unique needs and help you succeed in Dubai&#39;s dynamic market.</p>
 
 
             {imageList.map((img, index) => {

@@ -64,7 +64,7 @@ function Faq() {
     return (
         <div className='md:px-8 lg:px-[90px] px-4  md:py-20 py-10'>
             <div className='relative pt-10 pb-10'>
-                <p className='md:text-[18px] text-center text-[16px] font-[300] pt-5  text-white'>FAQ'S.</p>
+                <p className='md:text-[18px] text-center text-[16px] font-[300] pt-5  text-white'>FAQ&#39;S.</p>
                 <h3 className='md:text-[50px] text-[30px] text-center font-[4000] text-white ps-5'>Have questions ?</h3>
 
                <div className='md:p-10 relative z-50'>

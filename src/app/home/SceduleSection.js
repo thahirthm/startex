@@ -25,6 +25,7 @@ function SceduleSection() {
                 src={ArowVector}
                 width={1000}
                 height={1000}
+                alt='arrow'
                 className='md:w-full md:h-full w-[40px] h-[40px] asset1'
               />
             </div>
