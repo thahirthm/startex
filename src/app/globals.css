@@ -279,6 +279,13 @@ button {
   .chatbot-button svg {
     width: 25px !important;
   }
+  .banner-tab {
+    display: flex !important;
+    overflow: auto !important;
+    justify-content: space-around !important;
+    white-space: pre !important;
+    background-color: transparent !important;
+  }
 }
 
 @keyframes slowRotate {
@@ -325,3 +332,14 @@ a.bg-gradient:hover svg {
   height: fit-content;
   padding: 15px;
 }
+::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.swiper-pagination-bullet-active{
+  background: linear-gradient(90deg, #ff572f, #ffad20) !important;
+}
+

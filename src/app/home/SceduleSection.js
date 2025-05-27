@@ -18,13 +18,14 @@ function SceduleSection() {
         transition={{ duration: 1, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.3 }} // controls when it triggers
       >
-        <section className="  md:py-20 py-10  text-white">
+        <section className="  md:py-20 py-0  text-white">
           <div className='md:flex  justify-center'>
             <div className='md:w-[130px] md:h-[100px] md:block hidden w-[70px] h-[50px] pt-5 relative z-50'>
               <Image
                 src={ArowVector}
                 width={1000}
                 height={1000}
+                alt='arrow'
                 className='md:w-full md:h-full w-[40px] h-[40px] asset1'
               />
             </div>

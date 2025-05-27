@@ -6,6 +6,7 @@ import React from "react";
 import WhatsAppButton from "./WhatsAppButton";
 import CallButton from "./CallButton";
 import ChatbotButton from "./ChatbotButton";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -38,11 +39,19 @@ export default function Footer() {
           {/* Social */}
           <div className="flex flex-col items-start">
             <div className="font-[300] text-[14px] mb-2">Connect with us on Social Networks</div>
-            <div className="flex gap-2">
-              <a href="#"><Image src="/facebook.svg" alt="Facebook" width={22} height={22} /></a>
-              <a href="#"><Image src="/instagram.svg" alt="Instagram" width={22} height={22} /></a>
-              <a href="#"><Image src="/linkedin.svg" alt="LinkedIn" width={22} height={22} /></a>
-              <a href="#"><Image src="/youtube.svg" alt="YouTube" width={22} height={22} /></a>
+            <div className="flex gap-4 items-center">
+              <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-500 transition">
+                <FaFacebookF size={22} />
+              </a>
+              <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer" className="text-white hover:text-pink-500 transition">
+                <FaInstagram size={22} />
+              </a>
+              <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-700 transition">
+                <FaLinkedinIn size={22} />
+              </a>
+              <a href="#" aria-label="YouTube" target="_blank" rel="noopener noreferrer" className="text-white hover:text-red-600 transition">
+                <FaYoutube size={22} />
+              </a>
             </div>
           </div>
         </div>

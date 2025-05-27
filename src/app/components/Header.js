@@ -48,20 +48,18 @@ function Header() {
 
   return (
     <div
-      className={`w-full  z-50 transition-all duration-500 ease-in-out ${
-        isFixed ? "fixed top-0" : "absolute"
-      } ${
-        showHeader ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
-      }`}
+      className={`w-full  z-50 transition-all duration-500 ease-in-out ${isFixed ? "fixed top-0" : "absolute"
+        } ${showHeader ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+        }`}
     >
       <div className=" px-4 md:px-8 lg:px-[65px]   pt-7 pb-3 ">
-        <div className="flex gap-10 py-1 items-center rounded-[15px] border px-5 bg-[linear-gradient(0deg,_rgba(0,0,0,0.2)_0%,_rgba(0,0,0,0.2)_100%),linear-gradient(90deg,_rgba(64,64,64,0.48)_0%,_rgba(77,77,77,0.48)_100%)]">
+        <div className="flex gap-10 py-1 items-center md:rounded-[15px] rounded-[10px] border px-5 bg-[linear-gradient(0deg,_rgba(0,0,0,0.2)_0%,_rgba(0,0,0,0.2)_100%),linear-gradient(90deg,_rgba(64,64,64,0.48)_0%,_rgba(77,77,77,0.48)_100%)]">
           <div>
             <Link href="/">
               <Image
                 src={MainLogo}
                 alt="main icon"
-                className="w-[150px] md:w-[250px]"
+                className="w-[170px] md:w-[250px]"
                 width={500}
                 height={500}
               />
@@ -110,25 +108,21 @@ function Header() {
 
           {/* Navigation Links */}
           <div
-            className={`fixed top-0 left-0  w-full md:bg-transparent bg-primary md:h-full  h-screen  shadow-lg transform ${
-              isMenuOpen
-                ? "translate-x-0"
-                : "-translate-x-full md:translate-x-0"
-            } transition-transform duration-300 md:relative z-10 md:shadow-none md:flex md:items-center md:w-full`}
+            className={`fixed top-0 left-0  w-full md:bg-transparent bg-primary md:h-full  h-screen  shadow-lg transform ${isMenuOpen
+              ? "translate-x-0"
+              : "-translate-x-full md:translate-x-0"
+              } transition-transform duration-300 md:relative z-10 md:shadow-none md:flex md:items-center md:w-full`}
           >
             <ul className="flex flex-col md:flex-row items-start  md:items-center gap-6 md:gap-12 p-4 md:h-auto md:pt-4 pt-20 pe-0">
               <li
-                className={`text-[16px] hover-text-gradient  md:text-[16px]  text-secondary relative group ${
-                  [
-                    "/digital-transformation",
-                    "/artificial-intelligence",
-                    "/software-development",
-                  ].includes(currentPath)
-                    ? "header_active"
-                    : ""
-                }`}
+                className={`text-[16px] hover-text-gradient  md:text-[16px]  text-secondary relative group ${[
+                
+                ].includes(currentPath)
+                  ? "header_active"
+                  : ""
+                  }`}
               >
-                <Link href="/licensing" className="">
+                <Link href="/Licensing" className="">
                   Licensing
                 </Link>
                 {/* <ul className="absolute md:left-0 left-[100px]  top-0 z-50 md:top-full hidden border border-[#101010] bg-primary shadow-md rounded-md w-60 group-hover:flex flex-col">
@@ -153,9 +147,8 @@ function Header() {
               <li className="text-[16px] hover-text-gradient   text-secondary md:text-[16px] font-">
                 <Link
                   href="/guide"
-                  className={` ${
-                    currentPath === "/industries" && "header_active"
-                  }   `}
+                  className={` ${currentPath === "/industries" && "header_active"
+                    }   `}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Guide
@@ -163,19 +156,17 @@ function Header() {
               </li>
 
               <li
-                className={`text-[16px] hover-text-gradient  text-secondary md:text-[16px] relative group ${
-                  ["/prudentaly", "/nexivo", "/testnut", "/docurator"].includes(
-                    currentPath
-                  )
-                    ? "header_active"
-                    : ""
-                }`}
+                className={`text-[16px] hover-text-gradient  text-secondary md:text-[16px] relative group ${["/prudentaly", "/nexivo", "/testnut", "/docurator"].includes(
+                  currentPath
+                )
+                  ? "header_active"
+                  : ""
+                  }`}
               >
                 <Link
                   href="/services"
-                  className={` ${
-                    currentPath === "/products" && "header_active"
-                  }   `}
+                  className={` ${currentPath === "/products" && "header_active"
+                    }   `}
                 >
                   Service
                 </Link>
@@ -207,9 +198,8 @@ function Header() {
                 <Link
                   onClick={() => setIsMenuOpen(false)}
                   href="/workspace"
-                  className={` ${
-                    currentPath === "/process" && "header_active"
-                  }   `}
+                  className={` ${currentPath === "/process" && "header_active"
+                    }   `}
                 >
                   Workspace
                 </Link>
@@ -217,9 +207,8 @@ function Header() {
               <li className="text-[16px] hover-text-gradient  text-secondary md:text-[16px] font-">
                 <Link
                   href="/about"
-                  className={` ${
-                    currentPath === "/about" && "header_active"
-                  }   `}
+                  className={` ${currentPath === "/about" && "header_active"
+                    }   `}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Accounting
@@ -228,9 +217,8 @@ function Header() {
               <li className="text-[16px] hover-text-gradient  text-secondary md:text-[16px] font-">
                 <Link
                   href="/about"
-                  className={` ${
-                    currentPath === "/about" && "header_active"
-                  }   `}
+                  className={` ${currentPath === "/about" && "header_active"
+                    }   `}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Visa
@@ -239,9 +227,8 @@ function Header() {
               <li className="text-[16px] hover-text-gradient  text-secondary md:text-[16px] font-">
                 <Link
                   href="/about"
-                  className={` ${
-                    currentPath === "/about" && "header_active"
-                  }   `}
+                  className={` ${currentPath === "/about" && "header_active"
+                    }   `}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Company

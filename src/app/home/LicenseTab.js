@@ -57,15 +57,15 @@ function LicenseTab() {
 
             <div className='pt-5'>
                 <div className="w-full md:flex flex-col items-center">
-                    <div className="flex gap-10 md:justify-center  md:overflow-visible overflow-auto  pb-5 mb-6 w-full pt-5">
+                    <div className="flex gap-10 justify-center  flex-wrap  pb-5 mb-6 w-full pt-5">
                         {tabs.map((tab) => (
                             <button
                                 key={tab.value}
                                 onClick={() => setActive(tab.value)}
-                                className={`md:text-[32px] text-[22px] font-semibold transition-all duration-200 md:w-1/3 md:text-center 
+                                className={`md:text-[32px] text-[16px] font-semibold transition-all duration-200 md:w-1/3 md:text-center 
               ${active === tab.value
-                                        ? "text-gradient md:text-[32px] text-[22px]] font-[500] active-activity-tab whitespace-pre "
-                                        : "text-gradient md:text-[32px] text-[22px] font-[500] whitespace-pre "
+                                        ? "text-gradient md:text-[32px] text-[16px] font-[500] active-activity-tab whitespace-pre "
+                                        : "text-gradient md:text-[32px] text-[16px] font-[500] whitespace-pre "
                                     }
             `}
 

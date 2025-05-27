@@ -14,7 +14,7 @@ function OfficeSpaces() {
     return (
         <div className='px-4 md:px-8 lg:px-[90px] pt-10 pb-10' >
             <h3 className='text-gradient md:text-[50px] text-[27px] text-center'>Office Space Solutions</h3>
-            <p className='md:text-[16px] text-[15px] font-[300] pt-5 md:w-[70%] m-auto text-secondary text-center pb-10 md:pb-0'>Explore a diverse range of office solutions tailored to your business needs, including virtual offices, co-working spaces, executive suites, and more, all designed to support your growth in the UAE's dynamic market.</p>
+            <p className='md:text-[16px] text-[15px] font-[300] pt-5 md:w-[70%] m-auto text-secondary text-center pb-10 md:pb-0'>Explore a diverse range of office solutions tailored to your business needs, including virtual offices, co-working spaces, executive suites, and more, all designed to support your growth in the UAEs dynamic market.</p>
 
 
 

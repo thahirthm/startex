@@ -3,6 +3,8 @@ import Image from 'next/image';
 import React from 'react'
 import Logo1 from "../../../public/assets/images/home/l-1.svg";
 import Card from "../../../public/assets/images/home/license-card.png";
+import ResCard from "../../../public/assets/images/home/card-res.png";
+
 import Asset1 from "../../../public/assets/images/home/card-asset.svg";
 import Asset2 from "../../../public/assets/images/home/card-asset2.svg";
 import FaqAccordion from '../components/FaqAccordion';
@@ -64,19 +66,30 @@ function Faq() {
     return (
         <div className='md:px-8 lg:px-[90px] px-4  md:py-20 py-10'>
             <div className='relative pt-10 pb-10'>
-                <p className='md:text-[18px] text-center text-[16px] font-[300] pt-5  text-white'>FAQ'S.</p>
+                <p className='md:text-[18px] text-center text-[16px] font-[300] pt-5  text-white'>FAQ&#39;S.</p>
                 <h3 className='md:text-[50px] text-[30px] text-center font-[4000] text-white ps-5'>Have questions ?</h3>
 
-               <div className='md:p-10 relative z-50'>
-                <FaqAccordion />
-               </div>
-                <div className='absolute top-0 left-0 w-full h-full '>
+                <div className='md:p-10 relative z-50'>
+                    <FaqAccordion />
+                </div>
+                <div className='absolute top-0 left-0 w-full h-full !hidden md:block'>
                     <Image
                         src={Card}
                         alt="License Card"
                         width={500}
                         height={500}
                         className=" w-full h-full md:rounded-[0px] rounded-[40px] "
+                    />
+                </div>
+
+
+                <div className='absolute top-0 left-0 w-full h-full md:hidden block'>
+                    <Image
+                        src={ResCard}
+                        alt="License Card"
+                        width={500}
+                        height={500}
+                        className=" w-full h-full  "
                     />
                 </div>
                 <div className='absolute bottom-0 md:right-[-80px] w-[170px] z-[-5] h-full'>

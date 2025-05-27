@@ -51,7 +51,7 @@ const PackageSlider = () => {
 
                     navigation={false}
                     modules={[EffectCoverflow, Autoplay, Navigation]}
-                    className="mySwiper md:!pt-20 !pt-10 !pb-20"
+                    className="mySwiper md:!pt-20 !pt-10 md:!pb-20"
 
                     speed={2000}
                     breakpoints={{

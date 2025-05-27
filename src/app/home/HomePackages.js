@@ -27,7 +27,7 @@ function HomePackages() {
                     <h6 className='md:text-[22px] text=[16px] font-[400] text-secondary'>Packages</h6>
                 </div>
                 <h3 className='text-gradient md:text-[50px] text-[30px] text-center'>All-inclusive Business Packages</h3>
-                <p className='md:text-[16px] text-[15px] font-[300] pt-5 md:w-[70%] m-auto text-secondary text-center'>Startex Hub can help you navigate the process, ensuring that your business setup is smooth and efficient. Whether you're looking to establish a mainland company, free zone entity, or offshore business, our expert team can provide the guidance and support you need. With our knowledge of local regulations and business practices.</p>
+                <p className='md:text-[16px] text-[15px] font-[300] pt-5 md:w-[70%] m-auto text-secondary text-center'>Startex Hub can help you navigate the process, ensuring that your business setup is smooth and efficient. Whether you&#39;re looking to establish a mainland company, free zone entity, or offshore business, our expert team can provide the guidance and support you need. With our knowledge of local regulations and business practices.</p>
               
               <div className='pt-7 flex justify-center'>
               <button className="br-gr-btn">Explore all Packages</button>

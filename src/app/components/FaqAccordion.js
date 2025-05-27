@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Plus, Minus } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const faqData = [
   {
@@ -67,9 +68,20 @@ export default function FaqAccordion() {
             </div>
           </div>
 
-          {activeIndex === index && item.answer && (
-            <p className="text-sm text-white/80 mt-3 pr-8">{item.answer}</p>
-          )}
+          <AnimatePresence initial={false}>
+            {activeIndex === index && (
+              <motion.div
+                key="content"
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: "auto", opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+                className="overflow-hidden pr-8"
+              >
+                <p className="text-sm text-white/80 mt-3">{item.answer}</p>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       ))}
     </div>

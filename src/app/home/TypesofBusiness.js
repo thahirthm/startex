@@ -3,9 +3,12 @@ import Image from 'next/image';
 import React from 'react'
 import Logo1 from "../../../public/assets/images/home/l-1.svg";
 import Card from "../../../public/assets/images/home/license-card.png";
+import ResCard from "../../../public/assets/images/home/card-res.png";
+
 import Asset1 from "../../../public/assets/images/home/card-asset.svg";
 import Asset2 from "../../../public/assets/images/home/card-asset2.svg";
-import consultantFav from '../../../public/assets/images/home/fav-i.png'; 
+import consultantFav from '../../../public/assets/images/home/fav-i.png';
+
 
 
 export const licenses = [
@@ -86,7 +89,7 @@ function TypesofBusiness() {
                     ))}
 
                 </div>
-                <div className='absolute top-0 left-0 w-full h-full '>
+                <div className='absolute top-0 left-0 w-full h-full !hidden md:block'>
                     <Image
                         src={Card}
                         alt="License Card"
@@ -95,6 +98,20 @@ function TypesofBusiness() {
                         className=" w-full h-full md:rounded-[0px] rounded-[40px] "
                     />
                 </div>
+
+
+                <div className='absolute top-0 left-0 w-full h-full md:hidden block'>
+                    <Image
+                        src={ResCard}
+                        alt="License Card"
+                        width={500}
+                        height={500}
+                        className=" w-full h-full  "
+                    />
+                </div>
+
+
+
                 <div className='absolute bottom-0 md:right-[-80px] w-[170px] z-[-5] h-full'>
                     <Image
                         src={Asset1}
@@ -119,7 +136,7 @@ function TypesofBusiness() {
                 <div className='absolute top-0 right-[80px] w-[220px] z-[-5] h-[170px] opacity-45'>
                     <Image
                         src={consultantFav}
-                               alt="Consultantfav"
+                        alt="Consultantfav"
                         width={500}
                         height={500}
                         className=" w-full h-full "
