@@ -5,7 +5,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import BusinessTabs from "../components/BusinessTabs";
 import grad from "../../../public/assets/images/home/gr.png"
-import LicensingBannerImg from "../../../public/assets/images/licensing/dubai-banner.png";
+import accountingBannerimg from "../../../public/assets/images/accounting/ac-banner.png";
 
 import Image from "next/image";
 
@@ -37,10 +37,10 @@ function AccountingBanner() {
                 </div>
                 <div className="md:w-1/2 ms-auto pt-10 md:pt-0">
                     <Image
-                        src={LicensingBannerImg}
-                        alt="LicensingBanner"
-                        width={850}
-                        height={850}
+                        src={accountingBannerimg}
+                        alt="accountingBannerimg"
+                        width={1000}
+                        height={1000}
                         className="object-contain"
                     />
                 </div>

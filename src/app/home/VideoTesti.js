@@ -70,7 +70,7 @@ function VideoTesti() {
       >
         {testimonials.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="flex flex-col md:flex-row items-stretch bg-white rounded-xl overflow-hidden shadow-lg md:h-[360px]">
+            <div className="flex flex-col md:flex-row items-stretch bg-white rounded-xl overflow-hidden shadow-lg md:h-[360px] h-[535px]">
               <div className="w-full md:w-1/2 spect-video md:aspect-auto relative">
                 {playingIndex === index ? (
                   <video
