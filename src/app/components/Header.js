@@ -115,7 +115,7 @@ function Header() {
           >
             <ul className="flex flex-col md:flex-row items-start  md:items-center gap-6 md:gap-12 p-4 md:h-auto md:pt-4 pt-20 pe-0">
 
-              <li className="text-[16px] hover-text-gradient   text-secondary md:text-[16px] font-">
+              <li className="text-[16px] hover-text-gradient    text-secondary md:text-[16px] font-">
                 <Link
                   href="/licensing"
                   className={` ${currentPath === "/licensing" && "text-gradient"
