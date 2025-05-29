@@ -175,8 +175,8 @@ function Header() {
          
               <li className="text-[16px] hover-text-gradient  text-secondary md:text-[16px] font-">
                 <Link
-                  href="/about"
-                  className={` ${currentPath === "/about" && "header_active"
+                  href="/visa"
+                  className={` ${currentPath === "/visa" && "header_active"
                     }   `}
                   onClick={() => setIsMenuOpen(false)}
                 >
