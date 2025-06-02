@@ -183,16 +183,28 @@ function Header() {
                   Visa
                 </Link>
               </li>
-              <li className="text-[16px] hover-text-gradient  text-secondary md:text-[16px] font-">
-                <Link
-                  href="/about"
-                  className={` ${currentPath === "/about" && "header_active"
-                    }   `}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Company
-                </Link>
-              </li>
+              <li className="text-[16px] text-secondary md:text-[16px] font-medium relative group">
+        <Link
+          href="/"
+          className={`hover:text-gradient ${currentPath === "/" && "header_active"}`}
+          onClick={() => setIsMenuOpen(false)}
+        >
+          Company
+        </Link>
+
+        {/* DROPDOWN */}
+        <ul className="absolute top-full left-0 bg-white text-black min-w-[150px] shadow-lg rounded-md p-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 z-50">
+          <li className="py-2 px-4 hover:bg-gray-100">
+            <Link href="/about">About Us</Link>
+          </li>
+          <li className="py-2 px-4 hover:bg-gray-100">
+            <Link href="/blog">Blogs</Link>
+          </li>
+          <li className="py-2 px-4 hover:bg-gray-100">
+            <Link href="/careers">Careers</Link>
+          </li>
+        </ul>
+      </li>
             </ul>
 
             <ul className="flex ms-auto  md:flex-row items-start  md:items-center gap-6 md:gap-4 p-4 md:h-auto  md:pt-4 pt-20 pe-0">
