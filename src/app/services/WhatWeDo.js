@@ -19,35 +19,35 @@ const services = [
         description: 'A trademark protects a brand’s name, product, or service from unauthorized use, helping consumers identify authentic goods and their source.',
         link: ''
     },
-     {
+    {
         id: 2,
         image: S2,
         title: 'Trademark Registration',
         description: 'A trademark protects a brand’s name, product, or service from unauthorized use, helping consumers identify authentic goods and their source.',
         link: ''
     },
-     {
+    {
         id: 3,
         image: S3,
         title: 'Trademark Registration',
         description: 'A trademark protects a brand’s name, product, or service from unauthorized use, helping consumers identify authentic goods and their source.',
         link: ''
     },
-     {
+    {
         id: 4,
         image: S4,
         title: 'Trademark Registration',
         description: 'A trademark protects a brand’s name, product, or service from unauthorized use, helping consumers identify authentic goods and their source.',
         link: ''
     },
-     {
+    {
         id: 5,
         image: S5,
         title: 'Trademark Registration',
         description: 'A trademark protects a brand’s name, product, or service from unauthorized use, helping consumers identify authentic goods and their source.',
         link: ''
     },
-     {
+    {
         id: 6,
         image: S6,
         title: 'Trademark Registration',
@@ -59,9 +59,10 @@ const services = [
 function WhatWeDo() {
     return (
         <div className='px-4 md:px-8 lg:px-[90px] pt-10 pb-10'>
+            h6
             <h3 className='text-gradient md:text-[50px] text-[27px] font-[500] text-center'>What We Do.</h3>
             <p className='md:text-[16px] text-[15px] font-[300] pt-5 md:w-[70%] m-auto text-secondary text-center pb-10 md:pb-0'>
-                Discover the range of business licenses we offer, designed to support your venture&#39;s unique needs and help you succeed in Dubai&#39;s dynamic market.
+                At Kiltons Business Setup Services, we help businesses succeed in the UAE by providing company formation, liquidation, PRO services, bank account assistance, trademark registration, brand protection, and expert consulting — delivering end-to-end support for every stage of your business journey.
             </p>
 
             <div className='pt-10 pb-10 flex flex-wrap gap-6'>

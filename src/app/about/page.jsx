@@ -4,6 +4,8 @@ import Footer from '../components/Footer'
 import AboutBanner from './AboutBanner'
 import AboutDetail from './AboutDetail'
 import CompanyValues from './CompanyValues'
+import OurService from './OurService'
+import WhyChoose from './WhyChoose'
 
 function page() {
   return (
@@ -12,6 +14,8 @@ function page() {
 <AboutBanner />
 <AboutDetail />
 <CompanyValues />
+<OurService />
+<WhyChoose />
 
         <Footer />
     </div>
