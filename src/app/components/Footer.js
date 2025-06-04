@@ -87,12 +87,12 @@ export default function Footer() {
         <div>
           <div className="font-semibold mb-2">Service</div>
           <ul className="space-y-1">
-            <li><a href="#" className="hover:underline">Trade Service</a></li>
-            <li><a href="#" className="hover:underline">Open Bank Account</a></li>
-            <li><a href="#" className="hover:underline">Company Liquidation</a></li>
-            <li><a href="#" className="hover:underline">Pro Services</a></li>
-            <li><a href="#" className="hover:underline">Brand Protection</a></li>
-            <li><a href="#" className="hover:underline">UAE National Sponsorship</a></li>
+            <li><a href="/services/trademark-registration" className="hover:underline">Trade Service</a></li>
+            <li><a href="/services/open-bank-account" className="hover:underline">Open Bank Account</a></li>
+            <li><a href="/services/company-liquidation" className="hover:underline">Company Liquidation</a></li>
+            <li><a href="/services/pro-services" className="hover:underline">Pro Services</a></li>
+            <li><a href="/services/brand-protection" className="hover:underline">Brand Protection</a></li>
+            <li><a href="/services/sponsorship-services" className="hover:underline">UAE National Sponsorship</a></li>
           </ul>
         </div>
         <div>

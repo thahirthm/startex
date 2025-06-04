@@ -1,3 +1,4 @@
+import React from 'react'
 import Image from "next/image";
 import visionImg from "../../../public/assets/images/about/vission.png";
 import missionImg from "../../../public/assets/images/about/mission.png";

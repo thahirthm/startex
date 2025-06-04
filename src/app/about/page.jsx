@@ -6,20 +6,33 @@ import AboutDetail from './AboutDetail'
 import CompanyValues from './CompanyValues'
 import OurService from './OurService'
 import WhyChoose from './WhyChoose'
+import Team from './Team'
+import AbouFaq from './AbouFaq'
+import ConsultantBanner from '../components/ConsultantBanner'
+import VideoTesti from '../home/VideoTesti'
+import Testimonials from '../home/Testimonials'
+import Assoisiates from '../home/Assoisiates'
+import Faq from '../home/Faq'
 
-function page() {
+export default function Page() {
   return (
     <div>
-        <Header />
-<AboutBanner />
-<AboutDetail />
-<CompanyValues />
-<OurService />
-<WhyChoose />
+      <Header />
+      <AboutBanner />
+      <AboutDetail />
+      <CompanyValues />
+      <OurService />
+      <WhyChoose />
+      <Team />
+      <AbouFaq />
 
-        <Footer />
+
+        <ConsultantBanner />
+      <VideoTesti />
+      <Testimonials />
+      <Assoisiates />
+
+      <Footer />
     </div>
-  )
+  );
 }
-
-export default page
