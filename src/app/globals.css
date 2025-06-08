@@ -33,7 +33,10 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.bg-progress{
+  background: var(--main, linear-gradient(90deg, #ff572f 0%, #ffad20 100%));
 
+}
 .hover-text-gradient:hover {
   background: var(--main, linear-gradient(90deg, #ff572f 0%, #ffad20 100%));
   background-clip: text;

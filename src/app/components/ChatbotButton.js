@@ -6,7 +6,7 @@ const ChatbotButton = ({ onClick }) => {
       <style>{`
         .chatbot-container {
           position: fixed;
-          bottom: 180px; /* stacked above Call & WhatsApp buttons */
+          bottom: 300px; /* stacked above Call & WhatsApp buttons */
           right: 10px;
           z-index: 1000;
           display: flex;

@@ -19,6 +19,7 @@ import Faq from './Faq'
 import Footer from '../components/Footer'
 import GoldenVisa from './GoldenVisa'
 import PopupForm from '../components/PopupForm';
+import CostCalculator from '../components/CostCalculator';
 
 function HomePage() {
     const [showPopup, setShowPopup] = useState(false);
@@ -49,6 +50,7 @@ function HomePage() {
       <Testimonials />
       <Assoisiates />
       <Faq />
+      <CostCalculator />
       <Footer />
             {showPopup && <PopupForm onClose={() => setShowPopup(false)} />}
     </div>
