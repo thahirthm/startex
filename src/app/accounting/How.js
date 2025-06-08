@@ -14,27 +14,27 @@ const faqData = [
     {
         question: 'VAT registration',
         answer: 'VAT is a tax levied on consumption of commodities and hence it is known as a Consumption tax...',
-        link: '/services/vat-registration',
+        link: '/accounting/vat-registration',
     },
     {
-        question: 'Legal Formalities',
+        question: 'Accounting and Bookkeeping',
         answer: 'When it comes to starting a business in UAE Mainland or Freezone...',
-        link: '/services/legal-formalities',
+        link: '/accounting/accounting-book-keeping',
     },
     {
-        question: 'Ascertaining the Total Cost and Advising You Accordingly',
+        question: 'Auditing services',
         answer: 'Understand the business setup cost, licensing procedure...',
-        link: '/services/business-cost',
+        link: '/accounting/auditing-services',
     },
     {
-        question: 'Identifying Teething Troubles',
+        question: 'VAT Return',
         answer: 'We help you navigate early-stage business challenges...',
-        link: '/services/teething-troubles',
+        link: '/accounting/vat-return',
     },
     {
-        question: 'Hassle-Free Registration and Functioning',
+        question: 'CFO Services',
         answer: 'Our team ensures smooth registration and business functioning...',
-        link: '/services/registration',
+        link: '/accounting/cfo-services',
     },
 ];
 

@@ -117,8 +117,8 @@ function Header() {
 
               <li className="text-[16px] hover-text-gradient    text-secondary md:text-[16px] font-">
                 <Link
-                  href="/licensing"
-                  className={` ${currentPath === "/licensing" && "text-gradient"
+                  href="/business-license"
+                  className={` ${currentPath === "/business-license" && "text-gradient"
                     }   `}
                   onClick={() => setIsMenuOpen(false)}
                 >

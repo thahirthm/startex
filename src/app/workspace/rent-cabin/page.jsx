@@ -1,32 +1,33 @@
-import Footer from '@/app/components/Footer'
 import Header from '@/app/components/Header'
+
 import React from 'react'
-import BusinessBanner from './BusinessBanner'
+import RentBanner from './RentBanner'
 import Logo from '@/app/home/Logo'
-import BusinessTab from './BusinessTab'
+import BusinessTab from '../business-center/BusinessTab'
 import ConsultantBanner from '@/app/components/ConsultantBanner'
 import VideoTesti from '@/app/home/VideoTesti'
 import Testimonials from '@/app/home/Testimonials'
 import Assoisiates from '@/app/home/Assoisiates'
 import Faq from '@/app/home/Faq'
+import Footer from '@/app/components/Footer'
 
-function page () {
+function page() {
   return (
     <div>
-      <Header />
+        <Header />
 
-      <BusinessBanner />
-      <Logo />
-      <BusinessTab />
+        <RentBanner />
+        <Logo />
 
-       <ConsultantBanner />
+<BusinessTab />
+        
+ <ConsultantBanner />
 
             <VideoTesti />
             <Testimonials />
             <Assoisiates />
             <Faq />
-
-      <Footer />
+        <Footer />
     </div>
   )
 }

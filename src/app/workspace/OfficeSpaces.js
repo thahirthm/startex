@@ -61,7 +61,7 @@ function OfficeSpaces() {
 
                         <div className='pt-5 flex justify-center'>
                             <Link
-                                href={""}
+                                href={"/workspace/virtual-office"}
                                 className="bg-gradient w-[50px] h-[50px] flex justify-center items-center !rounded-[90px]"
                             >
                                 <ReDirect />
@@ -90,7 +90,7 @@ function OfficeSpaces() {
 
                         <div className='pt-5 flex justify-center'>
                             <Link
-                                href={""}
+                                href={"/workspace/flexi-desk"}
                                 className="bg-gradient w-[50px] h-[50px] flex justify-center items-center !rounded-[90px]"
                             >
                                 <ReDirect />
@@ -117,7 +117,7 @@ function OfficeSpaces() {
 
                         <div className='pt-5 flex justify-center'>
                             <Link
-                                href={""}
+                                href={"/workspace/rent-cabin"}
                                 className="bg-gradient w-[50px] h-[50px] flex justify-center items-center !rounded-[90px]"
                             >
                                 <ReDirect />

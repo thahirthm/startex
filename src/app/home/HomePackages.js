@@ -7,6 +7,7 @@ import grad from "../../../public/assets/images/home/gr.png"
 import packgeVector from "../../../public/assets/images/home/package-vector.png"
 
 import { motion } from "framer-motion";
+import Link from 'next/link'
 function HomePackages() {
   return (
     <div className='bg-primary h-auto relative '>
@@ -31,7 +32,7 @@ function HomePackages() {
           <p className='md:text-[16px] text-[15px] font-[300] pt-5 md:w-[70%] m-auto text-secondary text-center'>Startex Hub can help you navigate the process, ensuring that your business setup is smooth and efficient. Whether you&#39;re looking to establish a mainland company, free zone entity, or offshore business, our expert team can provide the guidance and support you need. With our knowledge of local regulations and business practices.</p>
         </motion.div>
         <div className='pt-7 flex justify-center'>
-          <button className="br-gr-btn">Explore all Packages</button>
+        <Link  href="packages">  <button className="br-gr-btn">Explore all Packages</button></Link>
         </div>
 
         <motion.div
