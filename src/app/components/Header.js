@@ -120,8 +120,7 @@ function Header() {
                   href="/business-license"
                   className={` ${currentPath === "/business-license" && "text-gradient"
                     }   `}
-                  onClick={() => setIsMenuOpen(false)}
-                >
+                  onClick={() => setIsMenuOpen(false)}>
                   Licensing
                 </Link>
               </li>
